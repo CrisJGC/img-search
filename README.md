@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# CONSIDERATIONS 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+As this project use an authorization key, you can´t deploy with githubpages, so make a copy and run local
 
 ## Available Scripts
 

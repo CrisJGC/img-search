@@ -5,6 +5,7 @@ import { useState } from 'react';
 const App = () => {
   const [photos, setPhotos] = useState([])
   const open = url => window.open(url)
+  const client_id = 'Client-ID M7kDdkH3CyeO0YUz1j_3a6ZKXfLSG4tOtaUzkIXoiH0' 
   console.log({ photos })
   return (
     <div className="App">
@@ -16,7 +17,7 @@ const App = () => {
             // llamado a la api unsplash
             const response = await fetch(`https://api.unsplash.com/search/photos?per_page=20&query=${values.search}`, {
               headers: {
-                'Authorization': 'Client-ID M7kDdkH3CyeO0YUz1j_3a6ZKXfLSG4tOtaUzkIXoiH0'
+                'Authorization': client_id
               }
             })
             const data = await response.json()
